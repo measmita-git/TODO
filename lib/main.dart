@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/home.dart';
+import 'package:flutter/services.dart';
+
+import 'package:todo_app/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TO DO List',
-      home: HomePage(),
+      home: HomeScreen(),
     );
   }
 }
