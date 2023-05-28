@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 searchBox(),
+                SizedBox(height: 10),
                 Expanded(
                   child: ListView(
                     children: [
@@ -95,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                SizedBox(width: 10),
                 Container(
                   margin: EdgeInsets.only(bottom: 20, right: 20),
                   child: ElevatedButton(
@@ -190,16 +192,16 @@ class _HomeScreenState extends State<HomeScreen> {
             Icons.menu,
             size: 30,
           ),
-          Container(
-            height: 50,
-            width: 50,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(25),
-              child: Image.asset(
-                'assets/asmi.JPG',
-              ),
-            ),
-          ),
+          // Container(
+          //   height: 50,
+          //   width: 50,
+          //   child: ClipRRect(
+          //     borderRadius: BorderRadius.circular(25),
+          //     child: Image.asset(
+          //       'assets/asmi.JPG',
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
